@@ -60,8 +60,8 @@ if uploaded_file is not None:
 
     stroke_width = st.sidebar.slider("스토로크 두께: ", 1, 25, 5)
     h, w = image.shape[:2]
-    if w > 800:
-        h_, w_ = int(h * 800 / w), 800
+    if w > 400:
+        h_, w_ = int(h * 400 / w), 400
     else:
         h_, w_ = h, w
 
